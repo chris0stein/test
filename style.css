@@ -1,0 +1,86 @@
+/* apply a natural box layout model to all elements */
+/* line 2, ../scss/style.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 6, ../scss/style.scss */
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  overflow: hidden; }
+
+/* line 17, ../scss/style.scss */
+.column {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid blue; }
+
+/* line 25, ../scss/style.scss */
+.a {
+  background-color: orange; }
+
+/* line 28, ../scss/style.scss */
+.b {
+  background-color: purple; }
+
+/* line 31, ../scss/style.scss */
+.c {
+  background-color: yellow; }
+
+/* line 34, ../scss/style.scss */
+.d {
+  background-color: violet; }
+
+/* line 44, ../scss/style.scss */
+#grid1 {
+  clear: both;
+  margin: 2em 0;
+  overflow: hidden; }
+  /* line 46, ../scss/style.scss */
+  #grid1 .column {
+    width: 25%;
+    float: left;
+    padding: 0 1%; }
+
+/* line 54, ../scss/style.scss */
+#grid2 {
+  clear: both;
+  margin: 2em 0;
+  overflow: hidden; }
+  /* line 56, ../scss/style.scss */
+  #grid2 .column {
+    width: 23%;
+    margin: 0 1%;
+    float: left; }
+
+/* line 64, ../scss/style.scss */
+#grid3 {
+  clear: both;
+  margin: 2em 0;
+  overflow: hidden; }
+  /* line 66, ../scss/style.scss */
+  #grid3 .column {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left; }
+    /* line 71, ../scss/style.scss */
+    #grid3 .column:last-of-type {
+      margin-right: 0; }
+
+/* line 77, ../scss/style.scss */
+#grid4 {
+  clear: both;
+  margin: 2em 0;
+  overflow: hidden; }
+  /* line 79, ../scss/style.scss */
+  #grid4 .column {
+    width: 6.5%;
+    margin-right: 2%;
+    float: left; }
+    /* line 84, ../scss/style.scss */
+    #grid4 .column:last-of-type {
+      margin-right: 0; }
